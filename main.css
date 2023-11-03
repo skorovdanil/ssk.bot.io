@@ -29,10 +29,11 @@ input[type="tel"] {
 
 input[type="submit"] {
     padding: 10px;
-    font-size: 15px;
+    font-size: 17px;
     background-color: #a057ef;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
+    height: 50px;
 }
 
 input {
