@@ -68,3 +68,7 @@ textarea {
     font-size: 17px;
     resize: none;
 }
+
+span {
+    height: 20px;
+}
