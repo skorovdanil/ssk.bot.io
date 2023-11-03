@@ -1,5 +1,5 @@
-let tg = window.Telegram.WebApp;
 
+let tg = window.Telegram.WebApp;
 tg.expend();
 
 let username = document.getElementById("name");
