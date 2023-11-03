@@ -11,5 +11,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 
 document.getElementById("message").addEventListener("focus", function() {
-    window.scrollBy(0, 300);
+    this.style.overflowY = "scroll";
+  });
+  
+  document.getElementById("message").addEventListener("blur", function() {
+    this.style.overflowY = "auto";
   });
