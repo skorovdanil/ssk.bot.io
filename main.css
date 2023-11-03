@@ -22,10 +22,11 @@ img {
 input[type="text"],
 input[type="tel"] {
     padding: 7px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     margin-top: 5px;
     font-size: 15px;
 }
+
 
 input[type="submit"] {
     padding: 10px;
@@ -42,11 +43,31 @@ input {
     border: none;
 }
 
+
 input#message {
-    height: 10vh;
+    height: 100px;
+    vertical-align: top;
+    padding-top: 5px;
 }
 
 input:checked {
     border-width: 1px;
     border-color: black;
+}
+
+p {
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+textarea {
+    width: 100%;
+    background-color: #f2f3f7;
+    border-radius: 7px;
+    border: none;
+    height: 100px;
+    padding: 7px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 17px;
 }
