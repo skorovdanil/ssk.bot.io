@@ -1,7 +1,5 @@
 body {
-
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-wrap: break-word;
 }
 
 form {
@@ -15,14 +13,14 @@ form {
     align-items: center;
 }
 img {
-    width: 100px;
+    width: 150px;
 }
 
 
 input[type="text"],
 input[type="tel"] {
     padding: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 2px;
     font-size: 15px;
 }
@@ -45,8 +43,8 @@ input {
 
 
 p {
+    margin-bottom: 20px;
     margin: 0;
-    margin-bottom: 10px;
     padding-right: 10px;
 }
 
@@ -58,8 +56,9 @@ textarea {
     width: 100%;
     padding: 5px;
     margin-right: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin-top: 5px;
     font-size: 17px;
     resize: none;
 }
+

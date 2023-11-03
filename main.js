@@ -10,3 +10,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(username,usertel,usermessage)
 });
 
+document.getElementById("message").addEventListener("focus", function() {
+    window.scrollBy(0, 300);
+  });
