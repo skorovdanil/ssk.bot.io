@@ -23,7 +23,7 @@ input[type="text"],
 input[type="tel"] {
     padding: 7px;
     margin-bottom: 20px;
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 15px;
 }
 
@@ -35,7 +35,7 @@ input[type="submit"] {
     color: white;
     font-weight: 500;
     height: 50px;
-    margin-top: 200px;
+    
 }
 
 input {
@@ -44,16 +44,9 @@ input {
     border: none;
 }
 
-
-input#message {
-    height: 100px;
-    vertical-align: top;
-    padding-top: 5px;
-}
-
-input:checked {
-    border-width: 1px;
-    border-color: black;
+input:focus {
+    border-width: 5px;
+    border-color: purple;
 }
 
 p {
