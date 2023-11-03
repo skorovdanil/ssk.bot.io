@@ -9,10 +9,15 @@ form {
     flex-direction: column;
 }
 
-img {
-    width: 100px;
-    
+.img_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+img {
+    width: 150px;
+}
+
 
 input[type="text"],
 input[type="tel"] {
