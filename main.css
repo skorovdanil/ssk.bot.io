@@ -28,6 +28,7 @@ input[type="tel"] {
 
 input[type="submit"] {
     padding: 10px;
+    margin-top: 500px;
     font-size: 17px;
     background-color: #a057ef;
     color: white;
