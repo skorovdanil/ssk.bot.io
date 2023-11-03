@@ -1,0 +1,46 @@
+body {
+
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100px;
+    
+}
+
+input[type="text"],
+input[type="tel"] {
+    padding: 7px;
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #a057ef;
+    color: white;
+    font-weight: 700;
+}
+
+input {
+    background-color: #f2f3f7;
+    border-radius: 7px;
+    border: none;
+}
+
+input#message {
+    height: 10vh;
+}
+
+input:checked {
+    border-width: 1px;
+    border-color: black;
+}
