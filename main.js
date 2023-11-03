@@ -10,10 +10,9 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(username,usertel,usermessage)
 });
 
-document.getElementById("message").addEventListener("focus", function() {
-    this.style.overflowY = "scroll";
+var inputFields = document.querySelectorAll(".form input");
+for (var i = 0; i < inputFields.length; i++) {
+  inputFields[i].addEventListener("input", function() {
+    document.activeElement.blur(); // Скрывает клавиатуру
   });
-  
-  document.getElementById("message").addEventListener("blur", function() {
-    this.style.overflowY = "auto";
-  });
+};
