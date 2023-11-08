@@ -6,7 +6,7 @@ window.onload = function() {
       }
     });
   
-    var textareaElements = document.querySelectorAll("#message, #tel, #name"); // Выборка элементов по их ID
+    var textareaElements = document.querySelectorAll("#message, #tel, #name");
   
     var isMobile = /iPhone|iPad|iPod|Android|Opera Mini|IEMobile|Mobile/i.test(navigator.userAgent);
   
@@ -25,7 +25,6 @@ window.onload = function() {
       let usermessage = document.getElementById("message");
   
       function sendDataToTelegram() {
-        // Отправка данных в Telegram
       }
   
       Telegram.WebApp.onEvent("mainButtonClicked", function(){
