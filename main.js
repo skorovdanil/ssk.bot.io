@@ -29,6 +29,7 @@ window.onload = function() {
   
       Telegram.WebApp.onEvent("mainButtonClicked", function(){
         sendDataToTelegram(username.value, usertel.value, usermessage.value);
+        close();
       });
     }
   };
