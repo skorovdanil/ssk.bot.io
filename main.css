@@ -38,24 +38,26 @@ input[type="submit"] {
 input {
     background-color: #f2f3f7;
     border-radius: 7px;
-    border: none;
+    border-color: #a057ef;
+    border-width: 1px;
+    border-style:solid;
 }
-
 
 p {
-    margin-bottom: 20px;
-    margin: 0;
-    padding-right: 8px;
+    display: flex;
+    margin-top: 2px;
 }
+
 
 textarea {
     background-color: #f2f3f7;
     border-radius: 7px;
-    border: none;
+    border-color: #a057ef;
+    border-style:solid;
+    border-width: 1px;
     height: 100px;
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    padding-top: 5px;
     padding-left: 5px;
     font-size: 17px;
     resize: none;
