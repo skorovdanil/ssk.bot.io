@@ -32,6 +32,35 @@
         </form>
     </div>
 </body>
+<script>
+    window.onload = function() {
+    var telInput = document.getElementById('tel');
+    Inputmask("+7 (999) 999-99-99").mask(telInput);
+    telInput.addEventListener('input', function() {
+      if (this.value.length === 18) {
+      }
+    });
 
+    var textarea = document.getElementById("message");
+    textarea.addEventListener("focus", function() {
+      document.body.style.height = "200vh";
+    });
+
+    textarea.addEventListener("blur", function() {
+      document.body.style.height = "100vh";
+    });
+  };
+
+  let tg = window.Telegram.WebApp;
+  tg.expend();
+  
+  let username = document.getElementById("name");
+  let usertel = document.getElementById("tel");
+  let usermessage = document.getElementById("message");
+  
+  Telegram.WebApp.onEvent("mainButtonClicked", function(){
+      tg.sendData(username,usertel,usermessage)
+  });
+</script>
 </html>
 
