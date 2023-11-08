@@ -1,13 +1,8 @@
 
 window.onload = function() {
-    // Получить поле ввода номера телефона
     var telInput = document.getElementById('tel');
-  
-    // Применить маску на поле ввода номера телефона
     $(telInput).inputmask("+7 (999) 999-99-99");
-  
-    // Добавить прослушиватель события ввода
-    telInput.addEventListener('fcus', function() {
+    telInput.addEventListener('input', function() {
       formatPhone(this);
     });
   };
