@@ -13,7 +13,7 @@ window.onload = function() {
         document.body.style.height = "120vh";
       });
       textarea.addEventListener("blur", function() {
-        document.body.style.height = "100%";
+        document.body.style.height = "100vh";
       });
     });
 
