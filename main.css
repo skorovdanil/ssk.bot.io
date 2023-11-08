@@ -34,7 +34,9 @@ input[type="submit"] {
     color: white;
     font-weight: 500;
     height: 50px;
+    border: none;
 }
+
 
 input {
     background-color: #f2f3f7;
@@ -43,6 +45,14 @@ input {
     border-width: 1px;
     border-style:solid;
 }
+
+input:focus, textarea:focus {
+  outline: none;
+  background-color: white;
+}
+
+
+
 
 p {
     display: flex;
