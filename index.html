@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бронь</title>
     <link rel="stylesheet" href="main.css" type="text/css"/>
+    <script src="/main.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!-- подключение jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script> <!-- подключение inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/extensions/inputmask.phone.extensions.min.js"></script> <!-- расширение для маски номера телефона -->
+<script>
+</script>
 </head>
 <body>
     <div class="img_logo">
@@ -19,13 +24,14 @@
                 <input type="text" name="name" required id="name" placeholder="Иван">
 
                 <label for="tel">Телефон</label>
-                <input type="tel" name="tel" required id="tel" pattern="[7,8]{1}[0-9]{10}" placeholder="8 000 000 00 00">
+                <input type="tel" name="tel" required id="tel" placeholder="+7 (999) 999-99-99">
                 <label for="message">Сообщение</label>
                 <p>
-                <textarea id="message" placeholder="Напишите комментарий"></textarea></p>
+                <textarea id="message" class="message" placeholder="Напишите комментарий"></textarea></p>
                 <input type="submit" value="Отправить">
         </form>
     </div>
 </body>
+
 </html>
 
