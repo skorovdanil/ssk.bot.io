@@ -18,12 +18,11 @@ window.onload = function() {
 
 
     let form = document.getElementById('myForm');
-    let username = document.getElementById("name").value;
-    let usertel = document.getElementById("tel").value;
-    let usermessage = document.getElementById("message").value;
 
 
     form.addEventListener('input', function(){ 
+      let username = document.getElementById("name").value;
+      let usertel = document.getElementById("tel").value;
       if (username.length > 5 && usertel.length > 10){ 
         tg.MainButton.show()
       }
@@ -34,10 +33,13 @@ window.onload = function() {
 
 
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
+      let name = document.getElementById("name").value;
+      let tel = document.getElementById("tel").value;
+      let message = document.getElementById("message").value;
       let data = {
-        name: username,
-        tel: usertel,
-        message: usermessage
+        name: name,
+        tel: tel,
+        message: message
       }
       tg.sendData(JSON.stringify(data));
       tg.close();
