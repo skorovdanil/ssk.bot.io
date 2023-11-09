@@ -23,7 +23,7 @@ window.onload = function() {
     form.addEventListener('input', function(){ 
       let username = document.getElementById("name").value;
       let usertel = document.getElementById("tel").value;
-      if (username.length > 5 && usertel.length > 10){ 
+      if (username.length > 2 && usertel.length == 18){ 
         tg.MainButton.show()
       }
       else{
