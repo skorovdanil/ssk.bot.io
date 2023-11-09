@@ -9,6 +9,7 @@ window.onload = function() {
 
     let tg = window.Telegram.WebApp;
     tg.expand();
+    tg.
 
 
     tg.MainButton.text = "Отправить"; //изменяем текст кнопки 
