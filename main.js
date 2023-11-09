@@ -22,10 +22,6 @@ window.onload = function() {
     };
     let tg = window.Telegram.WebApp;
     tg.expand();
-    let username = document.getElementById("name").value;
-    let usertel = document.getElementById("tel").value;
-    let usermessage = document.getElementById("message").value;
-
     tg.MainButton.text = "Отправить"; //изменяем текст кнопки 
     tg.MainButton.setText ("Отправить"); //изменяем текст кнопки 
     tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
@@ -39,7 +35,16 @@ window.onload = function() {
       }
     });
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
-      tg.sendData(username,usermessage,usertel);
+      let username = document.getElementById("name").value;
+      let usertel = document.getElementById("tel").value;
+      let usermessage = document.getElementById("message").value;
+  
+      let data = {
+        name: username,
+        tel: usertel,
+        message: usermessage
+      }
+      tg.sendData(JSON.stringify(data));
       tg.close();
     });
   };
