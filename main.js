@@ -17,25 +17,20 @@ window.onload = function() {
     tg.MainButton.color = "#A057EF"; //изменяем цвет бэкграунда кнопки
 
 
-    let form = document.getElementById('form');
-
-
     function checkInputs() {
       let username = document.getElementById("name").value;
       let usertel = document.getElementById("tel").value;
+      let telRegex = /[\+]{1}[7]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}/;
   
-      if (username.length > 2 && usertel === "[\+]{1}[7]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}") {
+      if (username.length > 2 && telRegex.test(usertel)) {
           tg.MainButton.show();
+          alert("Купите квартиру");
       } else {
           tg.MainButton.hide();
       }
   }
   
-
-
-    form.addEventListener('input', function(){ 
-      checkInputs();
-    });
+  setInterval(checkInputs, 1000);
 
 
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
