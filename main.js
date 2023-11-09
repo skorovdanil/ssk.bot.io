@@ -26,7 +26,7 @@ window.onload = function() {
     let usertel = document.getElementById("tel").value;
     let usermessage = document.getElementById("message").value;
 
-    tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
+    tg.MainButton.text = "Забронировать"; //изменяем текст кнопки 
     tg.MainButton.textColor = "#fffff"; //изменяем цвет текста кнопки
     tg.MainButton.color = "#a057ef"; //изменяем цвет бэкграунда кнопки
     btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
