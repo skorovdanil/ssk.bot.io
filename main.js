@@ -24,7 +24,6 @@ window.onload = function() {
   
       if (username.length > 2 && telRegex.test(usertel)) {
           tg.MainButton.show();
-          alert("Купите квартиру");
       } else {
           tg.MainButton.hide();
       }
