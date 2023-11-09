@@ -30,7 +30,6 @@ window.onload = function() {
     tg.MainButton.setText ("Отправить"); //изменяем текст кнопки 
     tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
     tg.MainButton.color = "#A057EF"; //изменяем цвет бэкграунда кнопки
-    tg.MainButton.
     btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана 
         tg.MainButton.hide() //скрываем кнопку 
