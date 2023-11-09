@@ -15,22 +15,21 @@ window.onload = function() {
     tg.MainButton.setText ("Отправить"); //изменяем текст кнопки 
     tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
     tg.MainButton.color = "#A057EF"; //изменяем цвет бэкграунда кнопки
-    tg.MainButton.show()
 
 
-    // let form = document.getElementById('myForm');
+    let form = document.getElementById('form');
 
 
-    // form.addEventListener('input', function(){ 
-    //   let username = document.getElementById("name").value;
-    //   let usertel = document.getElementById("tel").value;
-    //   if (username.length > 5 && usertel.length > 10){ 
-    //     tg.MainButton.show()
-    //   }
-    //   else{
-    //     tg.MainButton.hide() 
-    //   }
-    // });
+    form.addEventListener('input', function(){ 
+      let username = document.getElementById("name").value;
+      let usertel = document.getElementById("tel").value;
+      if (username.length > 5 && usertel.length > 10){ 
+        tg.MainButton.show()
+      }
+      else{
+        tg.MainButton.hide() 
+      }
+    });
 
 
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
