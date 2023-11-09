@@ -29,7 +29,7 @@ window.onload = function() {
       }
   }
   
-  setInterval(checkInputs, 1000);
+  setInterval(checkInputs, 300);
 
 
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
