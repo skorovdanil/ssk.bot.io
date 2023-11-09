@@ -26,10 +26,10 @@ window.onload = function() {
     let usertel = document.getElementById("tel").value;
     let usermessage = document.getElementById("message").value;
 
-    tg.MainButton.text = "Бронь"; //изменяем текст кнопки 
-    tg.MainButton.setText("Бронь"); //изменяем текст кнопки иначе
+    tg.MainButton.text = "Отправить"; //изменяем текст кнопки 
     tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
     tg.MainButton.color = "#A057EF"; //изменяем цвет бэкграунда кнопки
+    tg.MainButton.
     btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана 
         tg.MainButton.hide() //скрываем кнопку 
@@ -39,6 +39,7 @@ window.onload = function() {
       }
     });
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
+      tg.sendData(username,usermessage,usertel);
       tg.close();
     });
   };
