@@ -41,5 +41,6 @@ window.onload = function() {
     });
     Telegram.WebApp.onEvent("mainButtonClicked", function(){
       tg.sendData(username,usertel,usermessage)
+      tg.close();
     });
   };
