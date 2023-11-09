@@ -20,15 +20,21 @@ window.onload = function() {
     let form = document.getElementById('form');
 
 
-    form.addEventListener('input', function(){ 
+    function checkInputs() {
       let username = document.getElementById("name").value;
       let usertel = document.getElementById("tel").value;
-      if (username.length > 2 && usertel.length == 18){ 
-        tg.MainButton.show()
+  
+      if (username.length > 2 && usertel === "[\+]{1}[7]{1}\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}") {
+          tg.MainButton.show();
+      } else {
+          tg.MainButton.hide();
       }
-      else{
-        tg.MainButton.hide() 
-      }
+  }
+  
+
+
+    form.addEventListener('input', function(){ 
+      checkInputs();
     });
 
 
