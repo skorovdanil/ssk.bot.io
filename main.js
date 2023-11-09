@@ -27,10 +27,8 @@ window.onload = function() {
     let usermessage = document.getElementById("message").value;
 
     tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
-    tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-    tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-    tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
-    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры 
+    tg.MainButton.textColor = "#fffff"; //изменяем цвет текста кнопки
+    tg.MainButton.color = "#a057ef"; //изменяем цвет бэкграунда кнопки
     btn.addEventListener('click', function(){ //вешаем событие на нажатие html-кнопки
       if (tg.MainButton.isVisible){ //если кнопка показана 
         tg.MainButton.hide() //скрываем кнопку 
