@@ -26,7 +26,7 @@ window.onload = function() {
     let usertel = document.getElementById("tel").value;
     let usermessage = document.getElementById("message").value;
 
-    tg.MainButton.text = "Отправить"; //изменяем текст кнопки 
+    tg.MainButton.setText ("Отправить"); //изменяем текст кнопки 
     tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
     tg.MainButton.color = "#A057EF"; //изменяем цвет бэкграунда кнопки
     tg.MainButton.
