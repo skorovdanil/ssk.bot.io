@@ -24,7 +24,7 @@ window.onload = function() {
 
 
     form.addEventListener('input', function(){ 
-      if (username.length > 5 && usertel > 10){ 
+      if (username.length > 5 && usertel.length > 10){ 
         tg.MainButton.show()
       }
       else{
