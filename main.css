@@ -25,19 +25,6 @@ input[type="tel"] {
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-input[type="submit"] {
-    padding: 10px;
-    font-size: 17px;
-    background-color: #a057ef;
-    color: white;
-    font-weight: 500;
-    height: 50px;
-    border: none;
-}
-
-
 input {
     background-color: #f2f3f7;
     border-radius: 7px;
