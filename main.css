@@ -13,7 +13,7 @@ body {
     --page-animation: var(--page-animation-duration) ease;
     --text-color: #222;
     --page-hint-color: #83878a;
-    --hint-color: #74787a;
+    --hint-color: white;
     --placeholder-color: #e4e4e488;
 }
 
@@ -22,7 +22,7 @@ html.dark body {
     --bg-color: var(--tg-theme-secondary-bg-color, #0f0f0f);
     --text-color: #fff;
     --page-hint-color: #9b9ba1;
-    --hint-color: #64666d;
+    --hint-color: #292929;
     --placeholder-color: #0f0f0f;
   }
 
@@ -59,7 +59,7 @@ input {
 
 input:focus, textarea:focus {
   outline: none;
-  background-color: white;
+  background-color: var(--hint-color);
 }
 
 
