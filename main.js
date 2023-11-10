@@ -14,7 +14,6 @@ window.onload = function() {
 
   Telegram.WebApp.onEvent('themeChanged', setThemeClass);
   setThemeClass();
-
     let tg = window.Telegram.WebApp;
 
     tg.ready();
