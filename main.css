@@ -87,7 +87,7 @@ textarea {
     resize: none;
 }
 html.dark textarea{
-    background-color: var(--placeholder-color);
+    background-color: none;
     border-radius: 7px;
     border-color: #a057ef;
     border-style:solid;
@@ -103,5 +103,5 @@ html.dark textarea{
 
 html.dark input:focus, textarea:focus{
     outline: none;
-    background-color: none;
+    background-color: #e4e4e47c;
 }
